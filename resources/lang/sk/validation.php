@@ -2,14 +2,16 @@
 
 return [
 
+    
     /*
     |--------------------------------------------------------------------------
-    | Validation Language Lines
+    | Preklad vstupných hodnôt (validátor).
     |--------------------------------------------------------------------------
     |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
+    | Nasledujúce jazykové riadky obsahujú použité predvolené chybové správy
+    | triedy, ktorá kontroluje vstupné hodnoty (validátor).
+    | Niektoré pravidlá majú niekoľko verzií, napr. veľkosť. Môžete ich zmeniť na ľubovoľné
+    | iné, ktoré sú vhodnejšie pre vašu aplikáciu.
     |
     */
 
