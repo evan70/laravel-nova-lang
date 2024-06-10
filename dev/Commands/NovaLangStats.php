@@ -5,7 +5,7 @@ namespace Coderello\LaravelNovaLang\Commands;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Collection;
 use SplFileInfo;
-use Symfony\Component\Intl\Exception\MethodNotImplementedException;
+use Symfony\Polyfill\Intl\Icu\Exception\MethodNotImplementedException;
 
 class NovaLangStats extends AbstractDevCommand
 {
@@ -277,7 +277,7 @@ class NovaLangStats extends AbstractDevCommand
                 throw new \Exception('Invalid JSON file: '.$path);
             }
 
-            return array_diff(array_keys($json), static::IGNORED_KEYS);
+            return array_diff(array_keys($json), $this->getIgnoredNovaKeys());
         }
 
         return [];
